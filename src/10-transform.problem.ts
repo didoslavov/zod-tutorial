@@ -3,10 +3,14 @@
 import { expect, it } from 'vitest';
 import { z } from 'zod';
 
-const StarWarsPerson = z.object({
-    name: z.string(),
-    nameAsArray: z.array(z.string()).optional(),
-});
+const StarWarsPerson = z
+    .object({
+        name: z.string(),
+    })
+    .transform((person) => ({
+        ...person,
+        nameAsArray: person.name.split(' '),
+    }));
 //^ 🕵️‍♂️
 
 const StarWarsPeopleResults = z.object({
@@ -18,7 +22,7 @@ export const fetchStarWarsPeople = async () => {
 
     const parsedData = StarWarsPeopleResults.parse(data);
 
-    return parsedData.results.map((p) => ({ ...p, nameAsArray: p.name.split(' ') }));
+    return parsedData.results;
 };
 
 // TESTS
