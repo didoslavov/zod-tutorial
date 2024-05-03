@@ -14,6 +14,6 @@
     "skipLibCheck": true
   },
   "include": [
-    "/home/dido/Java Script/My Projects/zod-tutorial/src/06-default.problem.ts"
+    "/home/dido/Java Script/My Projects/zod-tutorial/src/07-union.problem.ts"
   ]
 }
