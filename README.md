@@ -1,3 +1,9 @@
+<h1 align="center">Zod & Typescript<h1>
+
+<p align="center">
+<img src="https://github.com/didoslavov/zod-tutorial/blob/main/zod.png" />
+</p>
+
 # Zod Tutorial
 
 <a href="https://totaltypescript.com/tutorials/zod"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1709295832/github--zod-tutorial_2x_nuxnyj.jpg" alt="zod tutorial" />Watch on TotalTypeScript.com</a>
